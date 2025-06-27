@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Fire Sensitivity Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  ...
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById('sensiBtn').addEventListener('click', () => {
+        window.location.href = 'sensi-files.html';
+      });
+    });
+  </script>
+</body>
+</html>
+
+<!-- Floating Sensi File Button -->
+<button id="sensiBtn" title="Download Sensi File">
+  📂 Sensi File
+</button>
+
+  <div class="container">
+    <h1>🔥 Hero Develops 🔥</h1>
+    <div class="input-container">
+      <input type="text" id="phoneInput" placeholder="Enter your phone model..." oninput="showDropdown()" autocomplete="off">
+      <div id="dropdown" class="dropdown hidden"></div>
+    </div>
+    <div class="input-container">
+      <select id="ramSelect">
+        <option value="">Select RAM Size</option>
+        <option value="2GB">2GB</option>
+        <option value="3GB">3GB</option>
+        <option value="4GB">4GB</option>
+        <option value="6GB">6GB</option>
+        <option value="8GB">8GB</option>
+        <option value="12GB">12GB</option>
+        <option value="16GB">16GB</option>
+      </select>
+    </div>
+    <button onclick="getSensitivity()">Get Settings</button>
+    <div id="result" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
